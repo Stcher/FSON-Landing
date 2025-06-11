@@ -4,13 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <!-- Logo with navigation/social links -->
-        <header id="top">
-            <nav>
-                <a href="#">
-                    Simply chocolate
+        <header class="header" id="top">
+            <nav class="header-navigation">
+                <a class="header-navigation-logo first-logo" href="#">
+                    <span class="header-navigation-logo-italic">Simply</span> Chocolate
                     <img src="./images/Vector.svg" alt="Chocolate">
                 </a>
                 <ul>
@@ -24,7 +28,7 @@
             </nav>
         </header>
         <main>
-            <section id="hero-banner">
+            <section class="hero-banner" id="hero-banner">
                 <h1>Treat yourself or a loved one to
                     our finest ingredients for a moment
                     of pure delight!</h1>
@@ -38,7 +42,7 @@
                 <ul>
                     <li>
                         <img src="./images/chocolate.svg" alt="chocolate">
-                        <h2>Unsurpassed taste</h2>
+                        <h2 data-benefits-heading class="benefits-heading">Unsurpassed taste</h2>
                         <p>Crafted with the finest quality cocoa beans and a
                             dedication to perfection, each bite is a decadent
                             experience that simply cannot be matched. Savor the
@@ -47,7 +51,7 @@
                     </li>
                     <li>
                         <img src="./images/Coin.svg" alt="coin">
-                        <h2>Affordable price</h2>
+                        <h2 data-benefits-heading  class="benefits-heading">Affordable price</h2>
                         <p>Indulge in high-quality chocolate without breaking
                             the bank with Simply Chocolate's selection of
                             affordable treats. Enjoy mouth-watering truffles and
@@ -57,7 +61,7 @@
                     </li>
                     <li>
                         <img src="./images/la_utensil-spoon.svg" alt="spoon">
-                        <h2>Own production</h2>
+                        <h2 data-benefits-heading  class="benefits-heading">Own production</h2>
                         <p>We take pride in our own production process, ensuring
                             that every step is carefully crafted to perfection.
                             From selecting the finest ingredients to
