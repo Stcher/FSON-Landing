@@ -1,13 +1,91 @@
 * {
-  font-family: "Montserrat", Helvetica;
-  list-style-type: none;
+    font-family: "Montserrat", Helvetica;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
 
 a {
     text-decoration: none;
     color: black;
 }
+
+.container {
+    width: 1136px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.hero-banner-title,
+.bottom-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+}
+
+.bottom-contacts-adress-list-item-number,
+.bottom-contacts-adress-list-item-mail,
+.bottom-contacts-title,
+.bottom-title,
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-adress-list-item,
+.white-text,
+.benefits-title,
+.hero-banner-title,
+.hero-banner-button-scroll,
+.button-secondary,
+.button-primary {
+    color: #fff;
+}
+
+.review-button,
+.review-list-item-title,
+.recipe-subtitle-list-item-text,
+.taste-list-item-text,
+.recipe-subtitle {
+    color: #111111;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.text-higlight {
+    color: #FD9222;
+}
+
+.button-primary:hover {
+    background-color: #FCF1E0;
+}
+
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-adress-list-item,
+.bottom-title,
+.review-list-item-subtitle,
+.recipe-subtitle-list-item-text,
+.taste-subtitle,
+.taste-list-item-text,
+.benefits-list-item-text {
+    letter-spacing: -0.02em;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-secondary,
+.button-primary {
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 14px 40px;
+}
+
+.button-secondary {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Navigation section start */
 
 .header-navigation-logo {
     font-weight: 700;
@@ -22,6 +100,16 @@ a {
     font-style: italic;
 }
 
+.header {}
+
+.header-navigation {}
+
+.first-logo {}
+
+/* Navigation section end */
+
+
+/* Hero section start */
 .hero-banner {
     background-image: url(/FSON-Landing/images/hero-banner.jpg);
     width: 1136px;
@@ -30,10 +118,180 @@ a {
     border-radius: 20px;
 }
 
-h2 {
-    color: red;
+.hero-banner-title {
+    letter-spacing: -0.03em;
+    padding-top: 381px;
+    max-width: 484px;
+    margin-bottom: 34px;
 }
 
-.header-navigation-logo .first-logo {
-    color: red;
+.hero-banner-button-scroll-image {}
+
+/* Hero section end */
+
+/* Benefits section start */
+
+.benefits {
+    background-color: #1e1823;
 }
+
+.benefits-list {}
+
+.benefits-list-item {}
+
+.benefits-title,
+.review-list-item-title,
+.recipe-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.benefits-list-item-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Benefits section end */
+
+/* Taste section start */
+
+.taste {}
+
+.taste-title {
+    text-transform: uppercase;
+}
+
+.taste-subtitle {
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+    color: #111111;
+    text-align: center;
+}
+
+.taste-list {}
+
+.taste-list-item {}
+
+.taste-list-item-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+}
+
+.list-item-milk,
+.button-primary {
+    background-color: #FD9222;
+}
+
+.list-item-nuts {
+    background-color: #1E1823;
+}
+
+/* Taste section end */
+
+/* Recipe section start */
+
+.recipe {}
+
+.recipe-title,
+.review-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.recipe-image {}
+
+.recipe-subtitle {
+    line-height: 133%;
+}
+
+.recipe-subtitle-list {}
+
+.recipe-subtitle-list-item {}
+
+.recipe-subtitle-list-item-text {
+    font-size: 14px;
+    line-height: 129%;
+}
+
+/* Recipe section end */
+
+/* Review section start */
+
+.review {}
+
+.review-list {}
+
+.review-list-item {}
+
+.review-list-item-image {}
+
+.review-list-item-title {
+    line-height: 133%;
+    text-align: center;
+}
+
+.review-list-item-subtitle {
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button-secondary {}
+
+.review-button {}
+
+/* Review section end */
+
+/* Footer section start */
+
+.bottom {
+    background-color: #1E1823;
+}
+
+.bottom-contacts {}
+
+.bottom-contacts-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+}
+
+.bottom-contacts-adress {}
+
+.bottom-contacts-adress-list {}
+
+.bottom-contacts-adress-list-item {
+    line-height: 129%;
+}
+
+.bottom-contacts-adress-list-item-number {}
+
+.bottom-contacts-adress-list-item-mail {}
+
+.bottom-navigation {}
+
+.bottom-navigation-list {}
+
+.bottom-navigation-list-item {}
+
+.bottom-navigation-list-item-anchor {
+    font-weight: 500;
+    line-height: 114%;
+}
+
+.bottom-subcribe {}
+
+.bottom-subcribe-email {}
+
+.bottom-subcribe-sumbit {}
+
+/* Footer section end */
