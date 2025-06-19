@@ -2,7 +2,15 @@
     font-family: "Montserrat", Helvetica;
 }
 
-h1,h2,h3,h4,h5,h6,p,div,a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -10,6 +18,7 @@ h1,h2,h3,h4,h5,h6,p,div,a {
 ul,
 li {
     list-style-type: none;
+    padding: 0;
 }
 
 a {
@@ -31,20 +40,7 @@ a {
     line-height: 121%;
 }
 
-.bottom-contacts-adress-list-item-number,
-.bottom-contacts-adress-list-item-mail,
-.bottom-contacts-title,
-.bottom-title,
-.bottom-navigation-list-item-anchor,
-.bottom-contacts-adress-list-item,
-.white-text,
-.benefits-title,
-.hero-banner-title,
-.hero-banner-button-scroll,
-.button-secondary,
-.button-primary {
-    color: #fff;
-}
+
 
 .review-button,
 .review-list-item-title,
@@ -93,6 +89,21 @@ button {
     border: #fff solid 1px;
 }
 
+.bottom-contacts-adress-list-item-number,
+.bottom-contacts-adress-list-item-mail,
+.bottom-contacts-title,
+.bottom-title,
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-adress-list-item,
+.white-text,
+.benefits-title,
+.hero-banner-title,
+.hero-banner-button-scroll,
+.button-secondary,
+.button-primary {
+    color: #fff;
+}
+
 /* Navigation section start */
 
 .header-navigation-logo {
@@ -101,14 +112,43 @@ button {
     letter-spacing: -0.10px;
     line-height: 20px;
     font-size: 18px;
+    flex-grow: 1;
     font-family: 'Montserrat-Bold', Helvetica;
+}
+
+.choco-logo {
+    margin-right: 4px;
 }
 
 .header-navigation-logo-italic {
     font-style: italic;
 }
 
-.header {}
+.header {
+    margin: 24px 0 32px 0;
+}
+
+.header-navigation-direction {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation-direction ul {
+    display: flex;
+}
+
+.header-navigation-menu {
+    gap: 24px;
+    margin-right: 90px;
+}
+
+.header-navigation-menu li {
+    font-weight: 500;
+}
+
+.header-navigation-social {
+    gap: 18px;
+}
 
 .header-navigation {}
 
@@ -128,7 +168,18 @@ button {
 }
 
 .hero-banner-content {
-        padding: 381px 40px 40px 40px;
+    padding: 381px 40px 40px 40px;
+}
+
+.hero-banner-content-buttons {
+    display: flex;
+    align-content: center;
+}
+
+.hero-banner-content-buttons div:first-child {
+    flex-grow: 1;
+    display: flex;
+    gap: 14px;
 }
 
 .hero-banner-title {
@@ -138,11 +189,15 @@ button {
 }
 
 .hero-banner-button-scroll {
-    padding-left: 585px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
+
 .hero-banner-button-scroll span {
     padding-top: 10px;
     padding-bottom: 10px;
+    flex-basis: content;
 }
 
 /* Hero section end */
@@ -153,14 +208,23 @@ button {
     background-color: #1e1823;
 }
 
+.benefits .container {
+    flex-basis: calc((100% - 2 * 88px) / 3);
+    display: flex;
+}
+
 .benefits-list {
     padding: 50px;
+    display: flex;
+    gap: 88px;
 }
+
 .benefits-list-item-image {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     padding: 15px;
 }
+
 .benefits-list-item {}
 
 .benefits-title {
@@ -186,9 +250,11 @@ button {
 
 .taste {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.taste-subtitle, .taste-title {
+.taste-subtitle,
+.taste-title {
     margin: 0 auto;
     text-align: center;
 }
@@ -196,7 +262,7 @@ button {
 .taste-title {
     text-transform: uppercase;
     max-width: 425px;
-    margin-bottom: 28px;
+    margin-bottom: 50px;
 }
 
 .taste-subtitle {
@@ -207,15 +273,23 @@ button {
     margin-bottom: 50px;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    gap: 18px;
+}
 
-.taste-list-item {}
+.taste-list-item {
+    border: 1px solid #FD9222;
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+}
 
 .taste-list-item-text {
     font-weight: 600;
     font-size: 14px;
     line-height: 129%;
     text-transform: uppercase;
+    margin-top: 36px;
 }
 
 .list-item-milk,
@@ -231,7 +305,9 @@ button {
 
 /* Recipe section start */
 
-.recipe {}
+.recipe {
+    margin-bottom: 100px;
+}
 
 .recipe-title,
 .review-title {
@@ -241,18 +317,37 @@ button {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
+}
 
+.recipe-content {
+    display: flex;
+}
+
+.recipe-content section {
+    padding: 32px;
+}
+
+.recipe-content img {
+    margin-right: 20px;
 }
 
 .recipe-image {}
 
 .recipe-subtitle {
     line-height: 133%;
+    margin-bottom: 28px;
 }
 
 .recipe-subtitle-list {}
 
-.recipe-subtitle-list-item {}
+.recipe-subtitle-list-item {
+    padding-bottom: 24px;
+}
+
+.recipe-subtitle-list-item:last-child {
+    padding-bottom: 0;
+}
 
 .recipe-subtitle-list-item-text {
     font-size: 14px;
@@ -265,11 +360,29 @@ button {
 
 .review {}
 
-.review-list {}
+.review .title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
 
-.review-list-item {}
+.review-list {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
 
-.review-list-item-image {}
+.review-list-item {
+    text-align: center;
+    width: 360px;
+}
+
+.review-list-item-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+}
 
 .review-list-item-title {
     line-height: 133%;
@@ -279,13 +392,22 @@ button {
 .review-list-item-subtitle {
     font-size: 14px;
     line-height: 129%;
+    padding: 24px;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
 }
 
-.review-button-secondary {}
+.review-button-secondary {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
 
-.review-button {}
+.review-button {
+    color: #111111;
+    border: #FD9222 solid 1px;
+    text-align: center;
+}
 
 /* Review section end */
 
@@ -294,6 +416,17 @@ button {
 .bottom {
     background-color: #1E1823;
 }
+
+.bottom-upper-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-right: 32px;
+}
+.bottom-title {
+    
+}
+
 
 .bottom-contacts {}
 
@@ -315,9 +448,14 @@ button {
 
 .bottom-contacts-adress-list-item-mail {}
 
-.bottom-navigation {}
+.bottom-navigation { 
+}
 
-.bottom-navigation-list {}
+.bottom-navigation-list {
+        display: flex;
+        gap: 24px;
+
+}
 
 .bottom-navigation-list-item {}
 
@@ -326,6 +464,12 @@ button {
     line-height: 114%;
 }
 
+.bottom-menu-below {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-bottom: 50px;
+}
 .bottom-subcribe {}
 
 .bottom-subcribe-email {}
@@ -333,3 +477,17 @@ button {
 .bottom-subcribe-sumbit {}
 
 /* Footer section end */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
