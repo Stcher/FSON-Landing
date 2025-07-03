@@ -55,6 +55,9 @@ a {
 .text-higlight {
     color: #FD9222;
 }
+.button-secondary:hover {
+    border: #FD9222 1px solid;
+}
 
 .button-primary:hover {
     background-color: #FCF1E0;
@@ -114,6 +117,7 @@ button {
     font-size: 18px;
     flex-grow: 1;
     font-family: 'Montserrat-Bold', Helvetica;
+    display: flex;
 }
 
 .choco-logo {
@@ -159,7 +163,7 @@ button {
 
 /* Hero section start */
 .hero-banner {
-    background-image: url(/FSON-Landing/images/hero-banner.jpg);
+    background-image: url('/FSON-Landing/images/hero-banner.jpg');
     width: 1136px;
     height: 600px;
     background-size: contain;
@@ -289,7 +293,7 @@ button {
     font-size: 14px;
     line-height: 129%;
     text-transform: uppercase;
-    margin-top: 36px;
+    padding-top: 36px;
 }
 
 .list-item-milk,
@@ -491,3 +495,160 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.social-icons {
+    stroke: #111111;
+    fill: transparent;
+}
+
+
+.taste-list-item {
+    position: relative;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    overflow: hidden;
+}
+
+.taste-card-wrap {
+    height: 100%;
+
+}
+
+.taste-card-wrap:hover .taste-card-back {
+    transform: translateY(0);
+}
+.list-item-milk {
+}
+.taste-card-front {
+}
+.taste-list-item-text {
+}
+.white-text {
+}
+.taste-card-back {
+    position: absolute;
+    top: 0;
+    transition: 1s all ease-in-out;
+    padding: 20px;
+    left: 0;
+    transform: translateY(100%);
+    background-color: #4d5ae5;
+    border-radius: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.taste-list-item-text .white-text {
+    background-color: #e7e9fc;
+    color: #2e2f42;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.507);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pop-up {
+    width: 517px;
+    height: 794px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+}
+
+.pop-up-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.pop-up-close-btn {
+    width: 5%;
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 24px;
+}
+
+.pop-up-field {
+    margin-bottom: 18px;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pop-up-field label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 8px;
+}
+.pop-up-field-input {
+    border: 1.50px solid #404040;
+    border-radius: 13px;
+    padding: 22px 24px 22px 70px;
+    box-sizing: border-box;
+}
+
+
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field:hover .pop-up-field-input,
+.pop-up-field:hover .pop-up-field-input::placeholder {
+    border-color: #FD9222;
+    stroke: #FD9222;
+    color: #FD9222;
+}
+
+.pop-up-field-input:focus-visible,
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field-input:focus-visible .pop-up-field-input::placeholder
+ {
+    border-color: #FD9222;
+    stroke: #FD9222;
+    outline: none;
+ }
+
+
+
+.pop-up-svg {
+    position: absolute;
+    top: 48%;
+    left: 28px;
+}
+
+.pop-up-field:last-of-type {
+    margin-bottom: 40px;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.button-pop-up {
+    width: 7%;
+    box-sizing: content-box;
+}
+
+

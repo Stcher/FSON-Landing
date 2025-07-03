@@ -35,16 +35,10 @@
                             <li><a href="#review">Chocolate is loved</a></li>
                         </ul>
                         <ul class="header-navigation-social">
-                            <li> <a href="https://www.instagram.com/"
-                                    rel="noopener noreferrer"
-                                    target="_blank"><img
-                                        src="./images/instagram.svg"
-                                        alt="Instagram"></a></li>
-                            <li> <a href="https://x.com/"
-                                    rel="noopener noreferrer"
-                                    target="_blank"><img
-                                        src="./images/twitter.svg"
-                                        alt="Twitter"></a></li>
+                            <li> <svg class="social-icons" width="24px" height="24px">
+                                <use href="../FSON-Landing/images/symbol-defs.svg#icon-twitter"></use></svg>
+                            </a></li>
+                            <li > <svg class="social-icons" width="24px" height="24px"><use href="../FSON-Landing/images/symbol-defs.svg#icon-instagram"></use></svg></li>
                         </ul>
                     </div>
                 </nav>
@@ -152,13 +146,25 @@
                         exceptional taste sensation.</p>
                     <ul class="taste-list">
                         <li class="taste-list-item list-item-milk">
-                            <img
-                                src="./images/choco-bar.png"
-                                alt="choco-bar"
-                                width="206"
-                                height="160">
-                            <p class="taste-list-item-text white-text">Milk
-                                chocolate </p>
+                            <div class="taste-card-wrap">
+                                    <div class="taste-card-front">
+                                        <img
+                                        src="./images/choco-bar.png"
+                                        alt="choco-bar"
+                                        width="206"
+                                        height="160" />
+                                        <p class="taste-list-item-text white-text">                                                <h3>Cashless Payment</h3>
+                                                <p>Marketing</p></p>
+                                    </div>
+                                    <div class="taste-card-back-wrap">
+                                        <div class="taste-card-back">
+                                            <p class="taste-list-item-text white-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                                            <div class="taste-card-back-bottom">
+
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </li>
                         <li class="taste-list-item">
                             <img
@@ -348,13 +354,46 @@
                         </ul>
                     </nav>
                     <form class="bottom-subcribe">
-                        <input type="text" placeholder="Enter your email"
-                            class="bottom-subcribe-email">
+                        <input type="url" placeholder="Your email">
                         <button type="submit"
                             class="bottom-subcribe-sumbit button-primary">Subscribe</button>
                     </form>
                 </div>
             </div>
         </footer>
+        <div class="overlay">
+            <form class="pop-up">
+                <button type="button" class="pop-up-close-btn">X</button>
+                <p class="pop-up-title">Leave a review about <span class="text-higlight">our chocolate</span></p>
+
+                <fieldset class="pop-up-field">
+                    <label for="name">Name</label>
+                    <svg class="pop-up-svg social-icons" width="24px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-user"></use>
+                    </svg>
+                    <input type="text" name="name" placeholder="Your name" class="pop-up-field-input">
+                </fieldset>
+
+                <fieldset class="pop-up-field">
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="Your email" class="pop-up-field-input email">
+                </fieldset>
+
+                <fieldset class="pop-up-field">
+                    <label for="telephone">Phone number</label>
+                    <input type="tel" name="telephone" placeholder="Your telephone" class="pop-up-field-input number">
+                </fieldset>
+                <fieldset class="pop-up-field">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" placeholder="Enter text"></textarea>
+                </fieldset>
+
+                <fieldset class="pop-up-field">
+                    <input type="checkbox" name="provacy">
+                    <label for="privacy">I accept the terms and conditions of the <span>Privacy Policy</span></label>
+                </fieldset>
+                <button type="submit" class="bottom-subcribe-sumbit button-primary button-pop-up">Send</button>
+            </form>
+        </div>
     </body>
 </html>
