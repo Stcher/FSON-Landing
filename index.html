@@ -354,7 +354,7 @@
                         </ul>
                     </nav>
                     <form class="bottom-subcribe">
-                        <input type="url" placeholder="Your email">
+                        <input type="url" placeholder="Your email" class="bottom-subcribe-email button-secondary">
                         <button type="submit"
                             class="bottom-subcribe-sumbit button-primary">Subscribe</button>
                     </form>
@@ -376,22 +376,32 @@
 
                 <fieldset class="pop-up-field">
                     <label for="">Email</label>
+                    <svg class="pop-up-svg social-icons" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-mail"></use></svg>
                     <input type="email" name="email" placeholder="Your email" class="pop-up-field-input email">
                 </fieldset>
 
                 <fieldset class="pop-up-field">
                     <label for="telephone">Phone number</label>
+                    <svg class="pop-up-svg social-icons" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
                     <input type="tel" name="telephone" placeholder="Your telephone" class="pop-up-field-input number">
-                </fieldset>
-                <fieldset class="pop-up-field">
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" placeholder="Enter text"></textarea>
                 </fieldset>
 
                 <fieldset class="pop-up-field">
-                    <input type="checkbox" name="provacy">
-                    <label for="privacy">I accept the terms and conditions of the <span>Privacy Policy</span></label>
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" rows="10" placeholder="Enter text" class="pop-up-field-comment"></textarea>
                 </fieldset>
+
+                <div>
+                    <fieldset class="pop-up-field">
+                        <label class="privacy">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <p class="checkbox-text">I accept the terms and conditions of the <span class="text-higlight privacy-link">Privacy Policy</span></p>
+                        </label>
+                    </fieldset>
+
+                </div>
+
                 <button type="submit" class="bottom-subcribe-sumbit button-primary button-pop-up">Send</button>
             </form>
         </div>
